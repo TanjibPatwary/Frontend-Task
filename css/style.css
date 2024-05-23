@@ -1,0 +1,50 @@
+/* styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+  
+#layout-builder {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    border: 2px solid #000;
+    display: flex;
+}
+  
+  .partition {
+    position: relative;
+    flex: 1;
+    margin: 2px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    resize: both;
+  }
+  
+  .split-button, .remove-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 10;
+    margin: 5px;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
